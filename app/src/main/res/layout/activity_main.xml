@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/app_logo"
+            />
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_toRightOf="@id/app_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="NSE STOCK TIPS"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:id="@+id/buttonShowCustomDialog"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/iconone" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/txtone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guidelines "
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/txttwo"
+            android:textColor="#B71C1C"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Learn  >>      "
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="#000000"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edgetwo"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llone"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@drawable/rounded_edge"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Learn"
+                    android:textColor="#FFCDD2"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="What is Stock Market ?"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/circle_img"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/circle"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:layout_toRightOf="@id/circle_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Beginner to Advance"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#e0e0e0"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/lasan"
+                    android:scaleType="fitXY"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/fresh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Fresh Tips"
+            android:textColor="#000000"
+            android:textSize="21sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            />
+        <ImageView
+            android:id="@+id/shareapp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/shareapp"
+            />
+        <ImageView
+            android:id="@+id/rateapp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="70dp"
+            android:src="@drawable/rateapp"
+            />
+    </RelativeLayout>
+
+
+
+    <Button
+
+        android:id="@+id/btnintraday"
+        android:background="@drawable/border_dashed"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="20dp"
+        android:textColor="#000000"
+        android:text="Intraday Tips"
+        android:textSize="17sp"/>
+
+</LinearLayout>
+            <LinearLayout
+                android:id="@+id/banner_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+
+</ScrollView>
+
+</LinearLayout>
